@@ -83,14 +83,21 @@ fibonacci=(num)=>{
   if(num <= 1){
     return num
   }
-
   return fibonacci(num-2) + fibonacci(num-1)
 }
 
 console.log(fibonacci(7))
 
+//Factorial
+console.log("Factorial")
+//Write a recursive function that finds the factorial of a given number. 
+//The factorial of a number can be found by multiplying that number by each number between itself and 1. 
+//For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
 
-3
-2
-1
-1
+factorial=(n)=>{
+  if(n === 1){
+    return 1
+  }
+  return n * factorial(n-1)
+}
+console.log(factorial(6))
